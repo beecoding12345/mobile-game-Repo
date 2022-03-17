@@ -13,11 +13,14 @@ using UnityEngine;
 
 public class HelloWorld : MonoBehaviour
 {
+
+    public string message = "Hello";
+
     // Start is called before the first frame update
     //called auto by unity
     void Start()
     {
-        Debug.Log("Lexi Rivera");
+        Debug.Log(message);
     }
 
     // Update is called once per frame
