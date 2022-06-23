@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 182765195}
   - component: {fileID: 182765194}
   - component: {fileID: 182765193}
+  - component: {fileID: 182765196}
   m_Layer: 5
   m_Name: Left
   m_TagString: Untagged
@@ -259,7 +260,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -298, y: -83}
+  m_AnchoredPosition: {x: -298, y: -77.79401}
   m_SizeDelta: {x: 160, y: 70.3458}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &182765193
@@ -305,7 +306,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 182765194}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1881396439}
+        m_TargetAssemblyTypeName: MoveBouncingSlider, Assembly-CSharp
+        m_MethodName: MoveLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &182765194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,6 +357,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182765191}
   m_CullTransparentMesh: 1
+--- !u!114 &182765196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182765191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58bd3bcb849a79e46b42daa3fe1fede5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &493450985
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,7 +446,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493450985}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.7, y: 0.16, z: 0}
+  m_LocalPosition: {x: 6.46, y: 0.1, z: 0}
   m_LocalScale: {x: 2.7684233, y: 3.053485, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -587,7 +612,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656397311}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.85, y: 0.39, z: 0}
+  m_LocalPosition: {x: -6.23, y: 0.1, z: 0}
   m_LocalScale: {x: 2.9453533, y: 2.9029584, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -688,6 +713,7 @@ GameObject:
   - component: {fileID: 1171522557}
   - component: {fileID: 1171522556}
   - component: {fileID: 1171522555}
+  - component: {fileID: 1171522558}
   m_Layer: 5
   m_Name: Right
   m_TagString: Untagged
@@ -711,7 +737,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 278, y: -80.397}
+  m_AnchoredPosition: {x: 279, y: -77.794}
   m_SizeDelta: {x: 160, y: 65.1399}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1171522555
@@ -757,7 +783,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1171522556}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1881396439}
+        m_TargetAssemblyTypeName: MoveBouncingSlider, Assembly-CSharp
+        m_MethodName: MoveRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1171522556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -796,6 +834,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171522553}
   m_CullTransparentMesh: 1
+--- !u!114 &1171522558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171522553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58bd3bcb849a79e46b42daa3fe1fede5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1705776007
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,7 +962,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705776007}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.11, y: -1.49, z: 0}
+  m_LocalPosition: {x: -0.01, y: 0.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1061,7 +1111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868652376}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06, y: 2.91, z: 0}
+  m_LocalPosition: {x: -0.01, y: 3.39, z: 0}
   m_LocalScale: {x: 3.033727, y: 3.1033297, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1079,6 +1129,7 @@ GameObject:
   - component: {fileID: 1881396436}
   - component: {fileID: 1881396435}
   - component: {fileID: 1881396438}
+  - component: {fileID: 1881396439}
   m_Layer: 0
   m_Name: Bouncing Slider V2
   m_TagString: Untagged
@@ -1152,7 +1203,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 9dbab1a9b653d2a4ba98f1b1d22fc67f, type: 3}
   m_Color: {r: 0.5849056, g: 0.5545567, b: 0.5545567, a: 1}
   m_FlipX: 0
@@ -1172,7 +1223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881396434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14, y: -3.37, z: 0}
+  m_LocalPosition: {x: -0.01, y: -3.3, z: 0}
   m_LocalScale: {x: 4.0064, y: 0.6020931, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1191,14 +1242,27 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 10
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
+--- !u!114 &1881396439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881396434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5af5b38b67956e249bdcadb8191387c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &2115506421
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,7 +1322,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.9811321, g: 0.53182864, b: 0.023139905, a: 1}
   m_FlipX: 0
