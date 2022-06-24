@@ -9,10 +9,6 @@ public class ScoreScript : MonoBehaviour
     public static int scoreValue = 0;
     Text Score;
 
-
-
-
-
     // Start is called before the first frame update
     void Start()
     {
