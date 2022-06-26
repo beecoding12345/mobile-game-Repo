@@ -12,7 +12,7 @@ public class ScoreScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scoreNum = 0
+        scoreNum = 0;
         MyscoreText.text = "score : " + scoreNum;
     }
 

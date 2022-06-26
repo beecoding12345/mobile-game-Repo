@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 public class GameLosing : MonoBehaviour
 {
     public void RestartButton(){
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 
     public void ExitButton()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
     }
 }
