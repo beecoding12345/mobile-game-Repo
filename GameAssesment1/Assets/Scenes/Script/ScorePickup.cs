@@ -9,20 +9,21 @@ public class ScorePickup : MonoBehaviour
     //public variable
     public int pickupvalue = 1;
 
-    
+
 
 
 
     //this is our condition if the ball hits the bouncing slider
-    void OnTriggerEnter2D(collider2D other)
+    void OnCollisionEnter2D(Collision2D collider)
+
     {
-        score scoreScript = other.GetComponent<Score>();
+
+
+        ScoreScript scoreScript = collider.collider.GetComponent<ScoreScript>();
 
         if (scoreScript != null)
         {
             scoreScript.AddScore(pickupvalue);
-
-
 
         }
 

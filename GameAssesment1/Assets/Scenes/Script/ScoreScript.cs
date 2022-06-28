@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreScript : MonoBehaviour
 {
@@ -18,6 +19,11 @@ public class ScoreScript : MonoBehaviour
     {
         //update the numerical value to the score
         scoreValue = scoreValue + toAdd;
+        if (scoreValue >=5)
+        {
+            SceneManager.LoadScene("Winning Screen");
+        }
+        
 
         //update the display of the score based on numerical value
         scoreDisplay.text = scoreValue.ToString();
