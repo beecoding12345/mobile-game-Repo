@@ -1717,6 +1717,7 @@ GameObject:
   - component: {fileID: 2115506423}
   - component: {fileID: 2115506422}
   - component: {fileID: 2115506424}
+  - component: {fileID: 2115506425}
   m_Layer: 0
   m_Name: Fire Pit
   m_TagString: Untagged
@@ -1816,3 +1817,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.0397847}
   m_EdgeRadius: 0
+--- !u!114 &2115506425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115506421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9c7f617f7561444e9848f7e7e84b507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -19,7 +19,7 @@ public class ScoreScript : MonoBehaviour
     {
         //update the numerical value to the score
         scoreValue = scoreValue + toAdd;
-        if (scoreValue >=5)
+        if (scoreValue >=20)
         {
             SceneManager.LoadScene("Winning Screen");
         }
