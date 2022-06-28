@@ -6,14 +6,21 @@ using UnityEngine.UI;
 public class ScoreScript : MonoBehaviour
 {
 
-    public Text MyscoreText;
-    private int scoreNum;
+    //public variable
+    public Text scoreDisplay;
 
-    // Start is called before the first frame update
-    void Start()
+    //private variables
+    private int scoreValue = 0;
+
+    //function to add the players score
+    //not called by unity
+    public void AddScore(int toAdd)
     {
-        scoreNum = 0;
-        MyscoreText.text = "score : " + scoreNum;
+        //update the numerical value to the score
+        scoreValue = scoreValue + toAdd;
+
+        //update the display of the score based on numerical value
+        scoreDisplay.text = scoreValue.ToString();
     }
 
    
