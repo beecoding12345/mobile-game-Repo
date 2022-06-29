@@ -7,6 +7,6 @@ public class FirePit : MonoBehaviour
 {
     void OnCollisionEnter2D(Collision2D collider)
     {
-        SceneManager.LoadScene("GameLosing");
+        SceneManager.LoadScene("Game Over Screen");
     }
 }
